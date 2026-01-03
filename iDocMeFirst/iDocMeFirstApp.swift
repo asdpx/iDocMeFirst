@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct iDocMeFirstApp: App {
+struct DocumentScannerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()  // Вместо ContentView
         }
     }
 }

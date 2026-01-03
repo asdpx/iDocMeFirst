@@ -1,22 +1,30 @@
 //
-//  EntitiesView.swift
+//  SettingsView.swift
+//  iDocMeFirst
+//
+//  Created by Vladimir Grishchenkov on 02.01.2026.
+//
+
+import Foundation
+//
+//  SettingsView.swift
 //  DocumentScannerApp
 //
-//  Экран сущностей (будет разработан позже)
+//  Экран настроек (будет разработан на этапе 3)
 //
 
 import SwiftUI
 
-struct EntitiesView: View {
+struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Image(systemName: "person.2.fill")
+                Image(systemName: "gear")
                     .font(.system(size: 80))
                     .foregroundColor(.gray)
                     .padding()
                 
-                Text("Сущности")
+                Text("Настройки")
                     .font(.title2)
                     .fontWeight(.semibold)
                 
@@ -24,11 +32,11 @@ struct EntitiesView: View {
                     .foregroundColor(.secondary)
                     .padding()
             }
-            .navigationTitle("Сущности")
+            .navigationTitle("Настройки")
         }
     }
 }
 
 #Preview {
-    EntitiesView()
+    SettingsView()
 }

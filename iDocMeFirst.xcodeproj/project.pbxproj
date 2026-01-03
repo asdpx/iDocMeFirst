@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		81B776982F07A38800BBF063 /* iDocMeFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDocMeFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B776982F07A38800BBF063 /* iDocMeFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iDocMeFirst.app; path = /Users/vladimirgrishchenkov/Desktop/Developer/iDocMeFirst/build/Debug/iDocMeFirst.app; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		81B5986A2F07B9DB0080E342 /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
+			sourceTree = "<group>";
+		};
 		81B7769A2F07A38800BBF063 /* iDocMeFirst */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = iDocMeFirst;
@@ -33,16 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				81B7769A2F07A38800BBF063 /* iDocMeFirst */,
-				81B776992F07A38800BBF063 /* Products */,
+				81B5986A2F07B9DB0080E342 /* Core */,
 			);
-			sourceTree = "<group>";
-		};
-		81B776992F07A38800BBF063 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				81B776982F07A38800BBF063 /* iDocMeFirst.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,6 +58,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				81B5986A2F07B9DB0080E342 /* Core */,
 				81B7769A2F07A38800BBF063 /* iDocMeFirst */,
 			);
 			name = iDocMeFirst;
@@ -95,7 +93,7 @@
 			mainGroup = 81B7768F2F07A38800BBF063;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 81B776992F07A38800BBF063 /* Products */;
+			productRefGroup = 81B7768F2F07A38800BBF063;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

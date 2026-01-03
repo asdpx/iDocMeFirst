@@ -1,8 +1,36 @@
 //
 //  MainTabView.swift
-//  iDocMeFirst
+//  DocumentScannerApp
 //
-//  Created by Vladimir Grishchenkov on 02.01.2026.
+//  Главный TabView с тремя вкладками
 //
 
-import Foundation
+import SwiftUI
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
+            // ЭКРАН 1: Сканер
+            ScannerView()
+                .tabItem {
+                    Label("Сканер", systemImage: "doc.text.viewfinder")
+                }
+            
+            // ЭКРАН 2: Сущности (пока заглушка)
+            EntitiesView()
+                .tabItem {
+                    Label("Сущности", systemImage: "person.2.fill")
+                }
+            
+            // ЭКРАН 3: Настройки (пока заглушка)
+            SettingsView()
+                .tabItem {
+                    Label("Настройки", systemImage: "gear")
+                }
+        }
+    }
+}
+
+#Preview {
+    MainTabView()
+}

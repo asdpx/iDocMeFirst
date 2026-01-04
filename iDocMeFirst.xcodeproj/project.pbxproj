@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		81B776982F07A38800BBF063 /* iDocMeFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iDocMeFirst.app; path = /Users/vladimirgrishchenkov/Desktop/Developer/iDocMeFirst/build/Debug/iDocMeFirst.app; sourceTree = "<absolute>"; };
+		816FAA0D2F0AEAE700A40EEA /* iDocMeFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDocMeFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -39,6 +39,7 @@
 			children = (
 				81B7769A2F07A38800BBF063 /* iDocMeFirst */,
 				81B5986A2F07B9DB0080E342 /* Core */,
+				816FAA0D2F0AEAE700A40EEA /* iDocMeFirst.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +66,7 @@
 			packageProductDependencies = (
 			);
 			productName = iDocMeFirst;
-			productReference = 81B776982F07A38800BBF063 /* iDocMeFirst.app */;
+			productReference = 816FAA0D2F0AEAE700A40EEA /* iDocMeFirst.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

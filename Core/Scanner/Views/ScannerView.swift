@@ -50,20 +50,17 @@ struct ScannerView: View {
                 }
             }
             .navigationTitle("Сканер")
-            .confirmationDialog("Выберите источник", isPresented: $showSourceSelection) {
-                Button("Камера (сканер)") {
-                    // TODO: Открыть камеру-сканер
-                    print("Открыть камеру")
-                }
-                
-                Button("Галерея") {
-                    // TODO: Открыть галерею
-                    print("Открыть галерею")
-                }
-                
-                Button("Отмена", role: .cancel) { }
-            } message: {
-                Text("Откуда взять документ?")
+            .sheet(isPresented: $showSourceSelection) {
+                SourceSelectionSheet(
+                    onCameraSelected: {
+                        // TODO: Открыть камеру-сканер
+                        print("Открыть камеру")
+                    },
+                    onGallerySelected: {
+                        // TODO: Открыть галерею
+                        print("Открыть галерею")
+                    }
+                )
             }
         }
     }

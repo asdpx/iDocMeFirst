@@ -6,9 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		813B14A02F0AF3560083BE1D /* ImagePickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813B149F2F0AF3560083BE1D /* ImagePickerService.swift */; };
+		81BFC29F2F0BDBAA00906D17 /* SimplePhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BFC29E2F0BDBAA00906D17 /* SimplePhotoPicker.swift */; };
+		81BFC2BE2F0C4F2600906D17 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BFC2BD2F0C4F2600906D17 /* StorageService.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		813B149F2F0AF3560083BE1D /* ImagePickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerService.swift; sourceTree = "<group>"; };
 		816FAA0D2F0AEAE700A40EEA /* iDocMeFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDocMeFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BFC29E2F0BDBAA00906D17 /* SimplePhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePhotoPicker.swift; sourceTree = "<group>"; };
+		81BFC2BD2F0C4F2600906D17 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		81BFC2A12F0BDD1300906D17 /* Exceptions for "iDocMeFirst" folder in "iDocMeFirst" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 81B776972F07A38800BBF063 /* iDocMeFirst */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		81B5986A2F07B9DB0080E342 /* Core */ = {
@@ -18,6 +37,9 @@
 		};
 		81B7769A2F07A38800BBF063 /* iDocMeFirst */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				81BFC2A12F0BDD1300906D17 /* Exceptions for "iDocMeFirst" folder in "iDocMeFirst" target */,
+			);
 			path = iDocMeFirst;
 			sourceTree = "<group>";
 		};
@@ -34,9 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		813B149E2F0AF33F0083BE1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				813B149F2F0AF3560083BE1D /* ImagePickerService.swift */,
+				81BFC29E2F0BDBAA00906D17 /* SimplePhotoPicker.swift */,
+				81BFC2BD2F0C4F2600906D17 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		81B7768F2F07A38800BBF063 = {
 			isa = PBXGroup;
 			children = (
+				813B149E2F0AF33F0083BE1D /* Services */,
 				81B7769A2F07A38800BBF063 /* iDocMeFirst */,
 				81B5986A2F07B9DB0080E342 /* Core */,
 				816FAA0D2F0AEAE700A40EEA /* iDocMeFirst.app */,
@@ -118,6 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813B14A02F0AF3560083BE1D /* ImagePickerService.swift in Sources */,
+				81BFC29F2F0BDBAA00906D17 /* SimplePhotoPicker.swift in Sources */,
+				81BFC2BE2F0C4F2600906D17 /* StorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +289,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iDocMeFirst/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = NSPhotoLibraryUsageDescription;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -297,6 +335,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iDocMeFirst/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = NSPhotoLibraryUsageDescription;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

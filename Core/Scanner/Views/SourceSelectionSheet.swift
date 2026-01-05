@@ -84,7 +84,6 @@ struct SourceSelectionSheet: View {
             Spacer()
         }
         .presentationDetents([.height(280)])
-        .presentationDragIndicator(.visible)
     }
 }
 

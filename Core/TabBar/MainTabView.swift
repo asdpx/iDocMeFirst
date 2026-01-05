@@ -28,6 +28,7 @@ struct MainTabView: View {
                     Label("Настройки", systemImage: "gear")
                 }
         }
+        
     }
 }
 

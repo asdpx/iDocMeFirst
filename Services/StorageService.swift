@@ -152,11 +152,3 @@ class StorageService {
     }
 }
 
-// MARK: - AlbumMetadata (для JSON)
-
-struct AlbumMetadata: Codable {
-    let id: UUID
-    let title: String
-    let createdDate: Date
-    let imageCount: Int
-}

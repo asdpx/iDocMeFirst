@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 import Photos
 
@@ -53,9 +51,28 @@ struct SimplePhotoPicker: View {
             }
         }
         .onAppear {
+            // ✅ ИЗМЕНЕНО: Подготавливаем Photos framework перед загрузкой
+            preparePhotosFramework()
             loadPhotos()
         }
     }
+    
+    // MARK: - Photos Framework Preparation
+    
+    /// ✅ НОВАЯ ФУНКЦИЯ: Подготовка Photos framework
+    private func preparePhotosFramework() {
+        // Проверяем статус авторизации (инициализирует Photos framework)
+        let status = PHPhotoLibrary.authorizationStatus(for: .readWrite)
+        
+        // Если ещё не запрашивали доступ, запрашиваем
+        if status == .notDetermined {
+            PHPhotoLibrary.requestAuthorization(for: .readWrite) { _ in
+                // Callback можно оставить пустым, нам нужна только инициализация
+            }
+        }
+    }
+    
+    // MARK: - Selection
     
     private func toggleSelection(_ asset: PHAsset) {
         if let index = selectedAssets.firstIndex(of: asset) {
@@ -64,6 +81,8 @@ struct SimplePhotoPicker: View {
             selectedAssets.append(asset)
         }
     }
+    
+    // MARK: - Loading Photos
     
     private func loadPhotos() {
         let fetchOptions = PHFetchOptions()
